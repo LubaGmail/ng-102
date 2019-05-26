@@ -1,0 +1,18 @@
+<style>
+    .fa {
+      color: deeppink; 
+      cursor: pointer;
+    }
+  </style>
+
+<div>
+  {{likesCount}}
+  <span
+    (click)='onClick()'
+    class='fa'
+    [class.fa-heart]='isActive'
+    [class.fa-heart-o]='!isActive'
+  ></span>
+  
+  <hr  />
+</div>

@@ -1,0 +1,17 @@
+<style>
+    .fa {
+      color: blue; 
+    }
+  </style>
+
+<div>
+
+  <span
+    (click)='onClick()'
+    class='fa'
+    [class.fa-star]='isFav'
+    [class.fa-star-o]='!isFav'
+  ></span>
+  
+  <hr  />
+</div>
